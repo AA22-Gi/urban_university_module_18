@@ -16,7 +16,7 @@ def shop(request):
         game2: '3499 руб.',
         game3: '1999 руб.',
     }
-    return render(request, 'third_task/games_.html', {'games': games})
+    return render(request, 'third_task/games.html', {'games': games})
 
 
 def cart(request):
