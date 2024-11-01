@@ -7,16 +7,16 @@ def platform(request):
 
 
 def shop(request):
-    game1 = 'Atomic Heart'
-    game2 = 'Cyberpunk 2077'
-    game3 = 'PayDay 2'
+    game1 = 'Atomic Heart - 1499 руб. '
+    game2 = 'Cyberpunk 2077 - 3499 руб. '
+    game3 = 'PayDay 2 - 1999 руб. '
 
     games = {
-        game1: '2899 руб.',
-        game2: '3499 руб.',
-        game3: '1999 руб.',
+        'game1': game1,
+        'game2': game2,
+        'game3': game3,
     }
-    return render(request, 'third_task/games.html', {'games': games})
+    return render(request, 'third_task/games.html', games)
 
 
 def cart(request):
