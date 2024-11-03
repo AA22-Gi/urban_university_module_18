@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
 </head>
+
 <body>
     <header>
         {% block pagename %}
         <h1>Главная страница</h1>
-        {% endblock%}
+        {% endblock %}
     </header>
 
     <nav>
         {% block menu %}
-        <ul>
-            <a href="/platform/">Главная</a><br><br>
-            <a href="/platform/games/">Магазин</a><br><br>
-            <a href="/platform/cart/">Корзина</a>
-        </ul>
+        <div><a href="/platform/">Главная</a></div><br>
+        <div><a href="/platform/games/">Магазин</a></div><br>
+        <div><a href="/platform/cart/">Корзина</a></div>
         {% endblock %}
     </nav>
 
