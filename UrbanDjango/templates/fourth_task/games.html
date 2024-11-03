@@ -2,12 +2,12 @@
 
 {% block pagename %}
 <h1>Игры</h1>
-{% endblock%}
+{% endblock %}
 
 {% block content %}
 <ul>
-    {%for game in games%}
+    {% for game in games %}
     <li>{{ game }} <button>Купить</button></li>
-    {%endfor%}
+    {% endfor %}
 </ul>
 {% endblock %}
