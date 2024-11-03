@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Корзина</title>
-</head>
-<body>
-    <h1>Корзина</h1>
-    <p>Здесь, Вы можете увидеть товары, которые вы добавили в корзину.</p>
-    <p>Ваша корзина пока пуста!</p>
-    <a href="/platform/"><button>Вернуться на главную страницу</button></a>
-</body>
-</html>
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %}
+<h1>Игры</h1>
+{% endblock%}
+
+{% block content %}
+<h2> Извините, ваша корзина пуста </h2>
+{% endblock %}
